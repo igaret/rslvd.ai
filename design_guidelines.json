@@ -1,0 +1,58 @@
+{
+  "theme": "dark",
+  "archetype": "Archetype 7: Electric & Neon",
+  "design_context": "Dashboard / App (Hybrid)",
+  "typography": {
+    "headings_font": "JetBrains Mono",
+    "body_font": "Source Code Pro",
+    "hierarchy": {
+      "h1": "text-4xl sm:text-5xl font-black tracking-tighter uppercase",
+      "h2": "text-2xl sm:text-3xl font-bold tracking-tight",
+      "body": "text-base leading-relaxed tracking-wider",
+      "labels": "text-xs font-bold uppercase tracking-[0.2em]"
+    }
+  },
+  "colors": {
+    "background": "#050505",
+    "surface": "#0A0A0A",
+    "primary": "#00FF41",
+    "secondary": "#08F7FE",
+    "accent": "#FF003C",
+    "text_primary": "#FFFFFF",
+    "text_secondary": "#00FF41",
+    "border": "rgba(0, 255, 65, 0.4)"
+  },
+  "surface_strategy": "Retro-Futurism (The Terminal Look). Deep black backgrounds, neon green/cyan borders (border-green-500/50), exposed grid skeleton layout, subtle drop-shadow glows on active states. CRITICAL: 0px border-radius everywhere. Sharp edges only.",
+  "layout": {
+    "spacing_scale": "Generous outer padding (p-8) with dense, rigid inner components (gap-4) mimicking a technical control room.",
+    "grid_protocol": "MODE B: THE CONTROL ROOM GRID (grid-cols-1 md:grid-cols-4). Tight gaps, full pixel utilization. The layout must feel like a connected telemetry screen.",
+    "borders": "border-collapse style styling. Expose the structural grid."
+  },
+  "components": {
+    "buttons": "Flat transparent background, 1px solid primary border, text-primary. Hover: bg-primary text-black transition-all duration-200. NO default Shadcn rounded borders.",
+    "inputs": "Shadcn deeply customized: bg-black border-b-2 border-primary rounded-none focus:ring-0 focus:border-secondary.",
+    "chat_bubbles": "Cardless, rectangular, full-width. AI message: border-l-2 border-secondary pl-4 bg-secondary/5. User message: border-r-2 border-primary pr-4 text-right bg-primary/5.",
+    "disclaimer": "text-xs text-accent uppercase tracking-widest mt-8 opacity-70",
+    "sidebar": "Left navigation rail styled like a command menu with telemetry stats."
+  },
+  "media": {
+    "image_urls": [
+      {
+        "category": "background",
+        "url": "https://static.prod-images.emergentagent.com/jobs/ec79ee98-be43-4cc5-97c9-616e30c3d470/images/842b5618e30b1b05f1cd99977bdda22a54e764263574a336571dc77520eba3d3.png",
+        "description": "Abstract dark cyberpunk texture for global app background or overlay"
+      },
+      {
+        "category": "ai_avatar",
+        "url": "https://static.prod-images.emergentagent.com/jobs/ec79ee98-be43-4cc5-97c9-616e30c3d470/images/0020534d8b3619d221181060a79b2b2d54bcc94e588189474760c1cf578c2cb2.png",
+        "description": "Cybernetic brain avatar for the AI persona in chat"
+      },
+      {
+        "category": "connection_status_visualizer",
+        "url": "https://static.prod-images.emergentagent.com/jobs/ec79ee98-be43-4cc5-97c9-616e30c3d470/images/245806f0bfb671944e39b8092fb9bc0aa767feb6cd1ba4c43fc81c7e6d4820ad.png",
+        "description": "Server rack visual to represent the Llama-server connection status"
+      }
+    ]
+  },
+  "instructions_to_main_agent": "Implement a strict Cyberpunk Terminal interface. Do not use default Vercel/SaaS aesthetics. Enforce `data-testid` on all inputs, settings toggles, chat forms, and connection indicator elements. Completely strip all border-radius from Shadcn components. Use `lucide-react` icons but style them with neon drop-shadows. Maintain WCAG/APCA contrast for text readability over the dark background."
+}
